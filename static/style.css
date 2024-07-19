@@ -1,0 +1,185 @@
+*,
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.background-image {
+    background: url(images/BG-Omni.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    height: 100vh; 
+    width: 100vw; 
+}
+
+.container {
+    margin-top: 1%;
+    border: 6px dashed green;
+    height: 40vh;
+    max-width: 400px;
+}
+
+.text-center {
+    margin-bottom: 1%;
+}
+
+.up {
+    clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 50% 100%, 25% 75%);
+    height: 90px;
+    width: 100px;
+}
+
+.back {
+    clip-path: polygon(25% 25%, 50% 0%, 75% 25%, 75% 75%, 25% 75%);
+    height: 90px;
+    width: 100px
+}
+
+.left {
+    clip-path: polygon(25% 25%, 75% 25%, 100% 50%, 75% 75%, 25% 75%);
+    height: 100px;
+    width: 90px
+}
+
+.right {
+    clip-path: polygon(0% 50.25%, 25% 25%, 75% 25%, 75% 75%, 25% 75%);
+    height: 100px;
+    width: 90px
+}
+
+.col-2 {
+    margin-left: 45%;
+    margin-top: -5%;
+}
+
+.col-1 {
+    margin-left: 45%;
+    margin-top: -1%;
+}
+
+
+.col-3 {
+    left: 38%;
+    margin-right: -10%;
+    margin-top: -4%;
+}
+
+
+.refresh:hover{
+    color: #333333;
+}
+
+button:hover {
+    box-shadow: 30%;
+    transform: scale(1.2)  ;
+    -webkit-transform: scale(1.2)  ;
+    -moz-transform: scale(1.2)  ;
+    -ms-transform: scale(1.2)  ;
+    -o-transform: scale(1.2)  ;
+}
+
+.stop,
+.refresh {
+    margin-top: 4%;
+    width: 20%;
+}
+
+footer {
+    background-color: rgb(113, 113, 173);
+    color: white;
+    margin-top: 4%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo {
+    height: 50%;
+    width: 40px;
+}
+
+.foo {
+    margin-left: 40%;
+}
+
+.box {
+    padding-right: -50%;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 312px) and (max-width: 575.98px) {
+
+    body {
+        
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin-top: 15%;
+        padding-top: 5%;
+        border: 4px dashed green;
+        max-width: 90%; 
+        height: 50%;
+    }
+
+    .text-center {
+        margin-bottom: 0%;
+    }
+    
+    .col-1 {
+        padding-top: -5%;
+        margin-left: 36%;
+    }
+
+    .col-2 {
+        margin-left: 36%;
+        padding-top: 6%;
+        margin-bottom: 5%;
+
+    }
+
+    .col-3 {
+        width: 40%;
+        margin-left: 12%;
+        margin-top: 0%;
+        left: 10%;
+    }
+  
+    .up,
+    .back {
+        height: 250%;
+        width: 70px;
+    }
+
+    .left,
+    .right {
+        height: 250%;
+        margin-left: 10%;
+        width: 60px;
+    }
+
+    .stop,
+    .refresh {
+        width: 40%;
+        margin-top: 10%;
+    }
+
+    .footer{
+        margin-top: -18%;
+        height: 9vh;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .foo {
+        padding-right: 0%;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
